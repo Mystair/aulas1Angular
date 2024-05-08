@@ -1,0 +1,27 @@
+<!--<p>cadastro works!</p>-->
+<div class="card my-5">
+    <div class="card-body">
+      <table class="table table-bordered table-striped">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">id</th>
+            <th scope="col">Nome do Carro</th>
+            <th scope="col">Ano de Fabricação</th>
+            <th scope="col">Ano do Modelo</th>
+            <th scope="col">Modelo</th>
+            <th scope="col">Marca</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let carro of listaCarros">
+            <td>{{ carro.id }}</td>
+            <td>{{ carro.nome }}</td>
+            <td>{{ carro.anoFabricacao }}</td>
+            <td>{{ carro.anoModelo }}</td>
+            <td>{{ carro.modelo }}</td>
+            <td>{{ carro.marca }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
